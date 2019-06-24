@@ -4,7 +4,7 @@ spring:
            - dev
 ---
 server:
-  port: 8001
+  port: 8005
 mybatis:
   type-aliases-package: com.zy.api.entity
  
@@ -31,12 +31,12 @@ eureka:
       defaultZone: http://localhost:7001/eureka # eureka服务器的地址   单机版
       #defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka #集群版
   instance: 
-    instance-id: springcloud-dept:8001  #设置访问的别名
+    instance-id: springcloud-dept:8005  #设置访问的别名
     prefer-ip-address: true        #显示ip地址
 
 ---
 server:
-  port: 8001
+  port: 8005
 mybatis:
   type-aliases-package: com.zy.api.entity
 spring:
@@ -62,5 +62,5 @@ eureka:
       defaultZone: http://localhost:7001/eureka # eureka服务器的地址   单机版
       #defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka #集群版
   instance: 
-    instance-id: springcloud-dept:8001  #设置访问的别名
+    instance-id: springcloud-dept:8005  #设置访问的别名
     prefer-ip-address: true        #显示ip地址
