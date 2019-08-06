@@ -8,7 +8,7 @@ spring:
     application:
         name: springcloud-eureka-client
 server:
-  port: 7002
+  port: 7003
 eureka:
   instance:
     hostname: localhost  #指定主机  本地的域名映射
@@ -16,7 +16,7 @@ eureka:
     register-with-eureka: false     #false表示不向注册中心注册自己
     fetch-registry: false           #false表示自己就是注册中心，职责是维护实例，不参加检索
     service-url:
-      defaultZone: http://localhost:7002/eureka/    #设置eureka server的交互地址，即对外暴露的地址
+      defaultZone: http://localhost:7003/eureka/    #设置eureka server的交互地址，即对外暴露的地址
       #defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/  #其他两个服务端的地址
 ---
 spring:
@@ -24,7 +24,7 @@ spring:
     application:
         name: springcloud-eureka-client
 server:
-  port: 7002
+  port: 7003
 eureka:
   instance:
     hostname: localhost  #指定主机  本地的域名映射
@@ -32,5 +32,5 @@ eureka:
     register-with-eureka: false     #false表示不向注册中心注册自己
     fetch-registry: false           #false表示自己就是注册中心，职责是维护实例，不参加检索
     service-url:
-      defaultZone: http://localhost:7002/eureka/    #设置eureka server的交互地址，即对外暴露的地址
+      defaultZone: http://localhost:7003/eureka/    #设置eureka server的交互地址，即对外暴露的地址
       #defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/  #其他两个服务端的地址
