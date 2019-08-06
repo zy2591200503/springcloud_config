@@ -8,7 +8,7 @@ spring:
     application:
         name: springcloud-eureka-client
 server:
-  port: 7003
+  port: 7004
 eureka:
   instance:
     hostname: localhost  #指定主机  本地的域名映射
